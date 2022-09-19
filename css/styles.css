@@ -1,9 +1,12 @@
+
+
 .body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   font-weight: 500;
 }
+
 :root{
   --brand-color: #000000;
   --gray-color: #757575;
@@ -29,12 +32,43 @@ a:active {
 button {
   cursor: pointer;
 }
+/* Reset h,p,ul */
+
+h1,h2,h3,h4,p,ul{
+  margin: 0;
+  padding: 0;
+}
+
+
 /* MAIN PAGE */
 /* Header */
 /* Logo */
+
+
+.conteiner {
+  outline: 2px solid tomato;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.top-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   text-decoration: none;
   list-style-type: none;
+  margin-right: 93px;
 }
 .logo-web {
   font-family: "Raleway";
@@ -54,11 +88,24 @@ button {
 /* Li */
 .menu {
   list-style-type: none;
+  display: flex;
 }
+.menu-item{
+  outline: 2px solid tomato;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu-link {
+  display: block;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
 }
 .menu-link:focus,
 .menu-link:hover {
@@ -69,8 +116,16 @@ button {
   color: var(--blue-color);
 }
 .menu-contacts {
+  display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+.contacts-link:not(:first-child) {
+  margin-left: 50px;
+}
+
 .contacts-link-phone-mail {
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -85,6 +140,8 @@ button {
   background-color: var(--main-bg-color);
 }
 .hero-header-class {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
