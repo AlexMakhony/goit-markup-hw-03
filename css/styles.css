@@ -1,0 +1,237 @@
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+:root{
+  --brand-color: #000000;
+  --gray-color: #757575;
+  --blue-color: #2196f3;
+  --white-color: #ffffff;
+  --our-team-bg: #F5F4FA;
+  --main-bg-color: #2f303a;
+  --button-portfolio-color: #212121;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+/* MAIN PAGE */
+/* Header */
+/* Logo */
+.logo {
+  text-decoration: none;
+  list-style-type: none;
+}
+.logo-web {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+.logo-studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--brand-color);
+}
+/* Li */
+.menu {
+  list-style-type: none;
+}
+.menu-link {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+.menu-link:focus,
+.menu-link:hover {
+  color: var(--blue-color);
+}
+
+.current {
+  color: var(--blue-color);
+}
+.menu-contacts {
+  list-style-type: none;
+}
+.contacts-link-phone-mail {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--gray-color)
+}
+.contacts-link-phone-mail:focus,
+.contacts-link-phone-mail:hover {
+  color: var(--blue-color);
+}
+/*Перша секція "замовити послугу"*/
+.try-us {
+  background-color: var(--main-bg-color);
+}
+.hero-header-class {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.try-button {
+  font-family: 'Roboto' ;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color:var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.try-button:hover,
+.try-button:focus{
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/*Друга секція "наші переваги"*/
+.bests {
+  background-color: var(--white-color);
+}
+.menu-strong {
+  list-style-type: none;
+}
+.list-strong-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+/*Нижче я вказав фонт вейт 400, бо за замовченням я поставив 500*/
+.text-strong-item {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--gray-color);
+}
+/*Третя секція "Чим ми займаємось"*/
+.works {
+  background-color: var(--white-color);
+}
+.text-portfolio-mail {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--button-portfolio-color);
+}
+.menu-portfolio {
+  list-style-type: none;
+}
+/*Четверт секція "Наша команда"*/
+.team {
+  background-color: var(--our-team-bg);
+}
+.team-menu {
+  list-style-type: none;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color:var(--button-portfolio-color);
+}
+.team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--gray-color);
+}
+/* Далі йдемо до підвалу */
+.footer-main {
+  background-color: var(--main-bg-color);
+}
+.footer-adress-menu {
+  list-style-type: none;
+}
+.footer-contact-link {
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mailto{
+  color: var(--white-color);
+}
+.footer-contact-link:focus,
+.footer-contact-link:hover {
+  color: var(--blue-color);
+}
+.logo-studio-footer {
+  color: var(--white-color);
+}
+/* Portfolio Page*/
+.main-section {
+  background-color: var(--white-color);
+}
+/* UL with buttons*/
+.buttons-menu {
+  list-style-type: none;
+}
+.button-portfolio {
+  background-color: var(--our-team-bg);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--button-portfolio-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+}
+.button-portfolio:focus,
+.button-portfolio:hover {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  border: none;
+}
+/* UL with picture*/
+.name-picture-section {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--brand-color);
+}
+.caption-picture-section {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--gray-color);
+}
