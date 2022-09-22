@@ -3,6 +3,7 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   font-weight: 500;
+  background-color: var(--white-color);
 }
 
 :root {
@@ -45,6 +46,13 @@ ul {
   padding: 0;
 }
 
+/* Reset Default img */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* MAIN PAGE */
 
 /* Paddings for sections */
@@ -82,7 +90,6 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .top-navigation {
@@ -138,9 +145,8 @@ ul {
 }
 .menu-contacts {
   display: flex;
+  margin-left: auto;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .contacts-link:not(:first-child) {
@@ -201,9 +207,7 @@ ul {
   background: var(--try-button-focus);
 }
 /*Друга секція "наші переваги"*/
-.bests {
-  background-color: var(--white-color);
-}
+
 .menu-strong {
   list-style-type: none;
   display: flex;
@@ -249,17 +253,25 @@ ul {
   list-style-type: none;
 }
 /*Четверт секція "Наша команда"*/
+/*
 .team {
+   Ментор сказала прибрати сірий колір, але у фігмі він саме сірий, тому лишаю як комент
   background-color: var(--our-team-bg);
+   
 }
+*/
 .team-menu {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
-.teampicture {
-  margin-bottom: 30px;
+
+
+.team-discription{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 .team-name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -282,8 +294,10 @@ ul {
   background-color: var(--main-bg-color);
 }
 
-.footer-adress-menu {
+.father-adress {
   margin-top: 20px;
+}
+.footer-adress-menu {
   list-style-type: none;
 }
 .footer-contact-link {
@@ -317,13 +331,13 @@ ul {
   display: flex;
   justify-content: center;
   margin-right: 20px;
+  margin-bottom: 50px;
   list-style-type: none;
 }
 .button-portfolio {
   padding: 6px 24px 6px 24px;
   font-style: normal;
   margin-right: 8px;
-  margin-bottom: 50px;
   background-color: var(--our-team-bg);
   font-family: "Roboto";
   font-weight: 500;
@@ -331,8 +345,6 @@ ul {
   line-height: 1.71;
   text-align: center;
   color: var(--button-portfolio-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
 }
@@ -340,6 +352,8 @@ ul {
 .button-portfolio:hover {
   color: var(--white-color);
   background-color: var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
 }
 .last {
@@ -365,27 +379,22 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
 }
-
+.options-discription {
+  padding: 20px 24px;
+  border-right: 1px solid var(--portfolio-border);
+  border-bottom: 1px solid var(--portfolio-border);
+  border-left: 1px solid var(--portfolio-border);
+}
 .name-picture-section {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-color);
-  border-right: 1px solid var(--portfolio-border);
-  border-left: 1px solid var(--portfolio-border);
 }
 .caption-picture-section {
-  padding-bottom: 20px;
-  padding-left: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--gray-color);
-  border-right: 1px solid var(--portfolio-border);
-  border-left: 1px solid var(--portfolio-border);
-  border-bottom: 1px solid var(--portfolio-border);
 }
